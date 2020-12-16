@@ -44,6 +44,7 @@ ul {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
+  background: #ffffff;
 }
 .nav {
   display: flex;
@@ -74,7 +75,7 @@ ul {
 .adresssvg {
   display: block;
   width: 16px;
-  height: 12px;
+  height: 16px;
   fill: rgba(117, 117, 117, 1);
 }
 .adresssvg :hover,
@@ -103,13 +104,14 @@ ul {
 }
 .telsvgitem {
   display: flex;
-  margin-left: auto;
+  margin-left: 31px;
+  align-items: center;
 }
 
 .telsvg {
   display: flex;
-  width: 10px;
-  height: 16px;
+  width: 13px;
+  height: 26px;
   fill: #757575;
 }
 
@@ -332,8 +334,11 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 15px;
 }
+.img-work-set:not(:last-child) {
+  margin-right: 30px;
+}
+
 .over-comand {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -429,10 +434,15 @@ ul {
   background: #ffffff;
   border-radius: 50%;
 }
+.social-list-link:hover,
+.social-list-link:focus {
+  background: #2196f3;
+}
 .social-list-link:hover .social-list-link-icon,
 .social-list-link:focus .social-list-link-icon {
-  fill: #2196f3;
+  fill: #ffffff;
 }
+
 .social-list-link-icon {
   width: 20px;
   height: 20px;
@@ -463,14 +473,9 @@ ul {
   margin-top: 50px;
 }
 .clients-logos-area {
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
   width: 170px;
   height: 90px;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .clients-logos-area:not(:last-child) {
   margin-right: 30px;
@@ -481,11 +486,17 @@ ul {
   align-items: center;
   justify-content: center;
   height: 45px;
+  width: 45px;
   fill: #afb1b8;
 }
 .clients-logos-area :hover,
 .clients-logos-area :focus {
   border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.clients-logos-area-label {
+  border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   width: 170px;
@@ -494,14 +505,15 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.clients-svg :hover,
-.clients-svg :focus {
+.clients-svg:hover,
+.clients-svg:focus {
   fill: #2196f3;
-  height: 45px;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .footer-conect {
   display: flex;
   align-items: flex-start;
@@ -539,6 +551,9 @@ ul {
 .footer-social-list-item:hover .footer-social-list-item-icon,
 .footer-social-list-item:focus .footer-social-list-item-icon {
   background: #2196f3;
+}
+.footer-social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-social-list-item-svg {
@@ -637,6 +652,7 @@ ul {
 .nav-portfolio-item:hover,
 .nav-portfolio-item:focus {
   color: #ffffff;
+  background: #2196f3;
 }
 .projects {
   display: flex;
@@ -650,11 +666,8 @@ ul {
 }
 .projects-item :hover,
 .projects-item :focus {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-item:nth-child(3n) {
