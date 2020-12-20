@@ -493,14 +493,10 @@ ul {
   height: 49px;
   fill: #afb1b8;
 }
-
-.clients-logos-area :hover,
-.clients-logos-area :focus {
-  border: 1px solid #2196f3;
-  box-sizing: border-box;
-  border-radius: 4px;
+.clients-logos-area-label:hover,
+.clients-logos-area-label:focus {
+  fill: #2196f3;
 }
-
 .clients-logos-area-label:hover .clients-svg,
 .clients-logos-area-label:focus .clients-svg {
   fill: #2196f3;
@@ -515,7 +511,10 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
+.clients-logos-area-label:hover,
+.clients-logos-area-label:focus {
+  border: 1px solid #2196f3;
+}
 .footer-conect {
   display: flex;
   align-items: flex-start;
@@ -547,7 +546,7 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #757575;
+  background: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
 }
@@ -670,6 +669,9 @@ ul {
   flex-wrap: wrap;
   margin-right: -30px;
 }
+.projects-item-text {
+  padding: 20px 24px;
+}
 .projects-item-div {
   width: 370px;
   height: 404px;
@@ -701,7 +703,6 @@ ul {
   letter-spacing: 0.06em;
 
   color: #212121;
-  padding-top: 20px;
 }
 .coment-item {
   font-family: Roboto;
@@ -715,7 +716,7 @@ ul {
 
   color: #757575;
   padding-top: 4px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .hr {
   border: 1px solid #ececec;
